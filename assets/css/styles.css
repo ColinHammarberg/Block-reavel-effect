@@ -1,0 +1,124 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+}
+
+
+
+.blocks {
+	width: 100%;
+    height: 100vh;
+    margin: auto;
+    align-items: center;
+}
+
+ul {
+    margin: 0;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	height: 60vh;
+	list-style: none;
+    justify-content: center;
+    align-items: center;
+    
+    
+    
+    
+}
+
+li {
+    height: 50vh;
+    justify-content: center;
+    
+    
+}
+
+.block-1 {
+	width: 10%;
+	background: #f0c18c;
+}
+
+.block-2 {
+	width: 30%;
+	background: #000;
+}
+
+.block-3 {
+	width: 20%;
+    background: #f0c18c;
+}
+
+.block-4 {
+	width: 10%;
+	background: #000;
+}
+
+.block-5 {
+	width: 20%;
+	background: #f0c18c;
+}
+
+.block-6 {
+	width: 10%;
+	background: #000;
+}
+
+
+/*--------------- typewriter effect --------------- */
+.line {
+      width: 24em;
+      margin: auto;
+      border-right: 2px solid rgba(255, 255, 255, 0.75);
+      text-align: center;
+      white-space: nowrap;
+      overflow: hidden;
+      transform: translateY(-50%);
+      
+}
+
+.anim-typewriter {
+      animation: typewriter 4s steps(47) 6.5s 1 normal both,
+      blinkTextCussor 500ms steps(47) infinite normal;
+}
+
+.anim-typewriter h1 {
+    padding-top: 100px;
+}
+
+@keyframes typewriter {
+      from {
+            width: 0;
+      }
+      to {
+            width: 20em;
+      }
+}
+
+@media(max-width: 768px) {
+      @keyframes typewriter {
+            from {
+                  width: 0;
+            }
+            to {
+                  width: 18em;
+            }
+      }
+}
+
+@keyframes blinkTextCussor {
+      from {
+            border-right-color: rgba(255, 255, 255, 0.75);
+      }
+      to {
+            border-right-color: transparent;
+      }
+}
